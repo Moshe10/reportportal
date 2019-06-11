@@ -68,13 +68,13 @@ else
 fi
 
 #service-ui
-if [ -d "$PWD/service-ui" ]; then
+if [ -d "$PWD/service-ui1" ]; then
     cd ./service-ui
         git checkout "$branchServiceUi"
         git pull
     cd ..
 else
-    git clone https://github.com/reportportal/service-ui.git
+    git clone https://github.com/Moshe10/service-ui-1
     cd ./service-ui
         git checkout "$branchServiceUi"
     cd ..
